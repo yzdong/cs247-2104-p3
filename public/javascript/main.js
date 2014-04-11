@@ -55,12 +55,8 @@
           fb_instance_stream.push({m:username+": " +$(this).val(), c: my_color});
         }
         $(this).val("");
-        scroll_to_bottom(0);
       }
     });
-
-    // scroll to bottom in case there is already content
-    scroll_to_bottom(1300);
   }
 
   // creates a message node and appends it to the conversation
@@ -86,6 +82,8 @@
 
       document.getElementById("conversation").appendChild(video);
     }
+    // Scroll to the bottom every time we display a new message
+    scroll_to_bottom(0);
   }
 
   function scroll_to_bottom(wait_time){
