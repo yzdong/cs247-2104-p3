@@ -96,7 +96,6 @@
         video.autoplay = true;
         video.controls = false; // optional
         video.loop = true;
-        video.width = 200;
 
         //source.type =  "video/ogg";
         //source.src =  URL.createObjectURL(base64_to_blob(data.v));
@@ -177,7 +176,7 @@
 
       });
     video.setAttribute('autoplay', true);
-    //webcam_stream.appendChild(video);        
+    webcam_stream.appendChild(video);        
       
       // counter
       var time = 0;
