@@ -88,7 +88,7 @@
   // creates a message node and appends it to the conversation
   function display_msg(data, username){
     $("#conversation").append("<div class='msg' style='color:"+data.c+"'>"+data.m+"</div>");
-    if(data.v /*&& (data.u != username)*/){
+    if(data.v && (data.u != username)){
       var source = document.createElement("source");
       var video = document.getElementById("reaction");
 
