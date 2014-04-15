@@ -11,7 +11,7 @@ var bodyParser = require('body-parser');
 var routes = require('./routes');
 var app = express();
 
-// enable sockiet io support
+// enable socket io support
 var server = http.createServer(app);
 // var io = require('socket.io').listen(server);
 // var chat = require('./routes/chat')(io);
